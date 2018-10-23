@@ -1,0 +1,254 @@
+{
+  "servers": [{
+      "id": "1234",
+      "name": "Agg Server1",
+      "status": "UP",
+      "weight": 4,
+      "attributes": []
+    },
+    {
+      "id": "3456",
+      "name": "Agg Server2",
+      "status": "UP",
+      "weight": 4,
+      "attributes": []
+    }
+  ],
+  "routers": [
+    {
+      "id": 5680934535,
+      "name": "SJC1",
+      "weight": 4,
+      "status": "UP",
+      "belongsTo": [{
+          "id": "1234",
+          "name": "Agg Server1"
+        },
+        {
+          "id": "3456",
+          "name": "Agg Server2"
+        }
+      ],
+      "attributes": [{
+        "name": "uptime",
+        "value": "1d, 3h"
+      }],
+      "routerinterfaces": [
+        {
+          "id": 1,
+          "name": "Eth1",
+          "status": "UP",
+          "belongsTo": 5680934535,
+          "attributes": [{
+              "name": "wan_ip",
+              "value": "10.10.10.10"
+            },
+            {
+              "name": "wan_gateway",
+              "value": "10.10.10.10"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Eth2",
+          "status": "DOWN",
+          "belongsTo": 5680934535,
+          "attributes": [{
+              "name": "wan_ip",
+              "value": "10.10.10.10"
+            },
+            {
+              "name": "wan_gateway",
+              "value": "10.10.10.10"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Eth3",
+          "status": "UP",
+          "belongsTo": 5680934535,
+          "attributes": [{
+              "name": "wan_ip",
+              "value": "10.10.10.10"
+            },
+            {
+              "name": "wan_gateway",
+              "value": "10.10.10.10"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Eth4",
+          "status": "UP",
+          "belongsTo": 5680934535,
+          "attributes": [{
+              "name": "wan_ip",
+              "value": "10.10.10.10"
+            },
+            {
+              "name": "wan_gateway",
+              "value": "10.10.10.10"
+            }
+          ]
+        }
+      ]
+
+    },
+    {
+      "id": 5680934536,
+      "name": "SJC2",
+      "weight": 4,
+      "status": "UP",
+      "belongsTo": [{
+        "id": "3456",
+        "name": "Agg Server2"
+      }],
+      "attributes": [{
+        "name": "uptime",
+        "value": "30m"
+      }],
+      "routerinterfaces": [
+        {
+          "id": 1,
+          "name": "Eth1",
+          "status": "UP",
+          "belongsTo": 5680934536,
+          "attributes": [{
+              "name": "wan_ip",
+              "value": "10.10.10.10"
+            },
+            {
+              "name": "wan_gateway",
+              "value": "10.10.10.10"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Eth2",
+          "status": "DOWN",
+          "belongsTo": 5680934536,
+          "attributes": [{
+              "name": "wan_ip",
+              "value": "10.10.10.10"
+            },
+            {
+              "name": "wan_gateway",
+              "value": "10.10.10.10"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Eth3",
+          "status": "UP",
+          "belongsTo": 5680934536,
+          "attributes": [{
+              "name": "wan_ip",
+              "value": "10.10.10.10"
+            },
+            {
+              "name": "wan_gateway",
+              "value": "10.10.10.10"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Eth4",
+          "status": "UP",
+          "belongsTo": 5680934536,
+          "attributes": [{
+              "name": "wan_ip",
+              "value": "10.10.10.10"
+            },
+            {
+              "name": "wan_gateway",
+              "value": "10.10.10.10"
+            }
+          ]
+        }
+      ]
+
+    },
+    {
+      "id": 5680934538,
+      "name": "SJC3",
+      "weight": 4,
+      "status": "UP",
+      "belongsTo": [{
+        "id": "1234",
+        "name": "Agg Server1"
+      }],
+      "attributes": [{
+        "name": "uptime",
+        "value": "12h"
+      }],
+      "routerinterfaces": [
+        {
+          "id": 1,
+          "name": "Eth1",
+          "status": "UP",
+          "belongsTo": 5680934538,
+          "attributes": [{
+              "name": "wan_ip",
+              "value": "10.10.10.10"
+            },
+            {
+              "name": "wan_gateway",
+              "value": "10.10.10.10"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Eth2",
+          "status": "DOWN",
+          "belongsTo": 5680934538,
+          "attributes": [{
+              "name": "wan_ip",
+              "value": "10.10.10.10"
+            },
+            {
+              "name": "wan_gateway",
+              "value": "10.10.10.10"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Eth3",
+          "status": "UP",
+          "belongsTo": 5680934538,
+          "attributes": [{
+              "name": "wan_ip",
+              "value": "10.10.10.10"
+            },
+            {
+              "name": "wan_gateway",
+              "value": "10.10.10.10"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Eth4",
+          "status": "UP",
+          "belongsTo": 5680934538,
+          "attributes": [{
+              "name": "wan_ip",
+              "value": "10.10.10.10"
+            },
+            {
+              "name": "wan_gateway",
+              "value": "10.10.10.10"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
